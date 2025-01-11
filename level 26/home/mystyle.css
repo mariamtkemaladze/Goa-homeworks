@@ -1,0 +1,117 @@
+.p1
+{
+color: indigo;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.p2
+{
+    color: indigo;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
+}
+
+.p3
+{
+    color: indigo;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+.p4
+ {
+    color: indigo;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.p5
+{
+    color: indigo;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.p6
+{
+    color: indigo;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.p7
+{
+    color: indigo;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.p8
+{
+    color: indigo;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.p9
+{
+    color: indigo;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+.h2
+{
+    color: red;
+    font-family: cursive;
+    text-shadow: 5px 5px 4px gray;
+}
+
+
+.shevgondi1
+{
+    color: darkgreen;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 5px 5px 5px;
+}
+
+.shevgondi3
+{
+    color:brown;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 5px 5px 5px;
+}
+
+.shevgondi5
+{
+    color:darkmagenta;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 5px 5px 5px darkmagenta;
+}
+
+.shevgondi7
+{
+    color:blue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 5px 5px 5px;
+}
+
+
+.h3{
+    color: crimson;
+    font-family: cursive;
+    text-shadow: 5px 5px 5px gray;
+    text-align: center;
+}
+
+.h2{
+    color:deeppink;
+}
+
+.header1
+{
+    color: red;
+    text-align: center;
+    text-shadow: 5px 5px 2px gray;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+body {background-color: white;}
