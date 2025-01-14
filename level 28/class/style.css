@@ -1,0 +1,22 @@
+.square1
+{
+    background-color: cadetblue;
+    width: 100px;
+    height: 100px;
+   border:50px;
+   border-radius: 50px;
+}
+
+
+.square2
+{
+    background-color: brown;
+    width: 100px;
+    height: 100px;
+    border:50px;
+    border-radius: 50px;
+    padding-top: 200px;
+    padding-left: 300px;
+    padding-bottom: 50px;
+   
+}
