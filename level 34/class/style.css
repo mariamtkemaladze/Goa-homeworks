@@ -1,0 +1,13 @@
+a:link{color:deeppink;
+font-size: 300%;
+text-decoration: none;}
+
+a:visited{color:darkred;
+font-size: 150%;
+text-decoration: underline;}
+
+a:hover{color:darkred;
+font-size: 400%;}
+
+a:active{color:blue;
+background-color: aquamarine;}

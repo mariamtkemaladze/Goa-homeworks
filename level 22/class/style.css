@@ -1,0 +1,20 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f3f4f6;
+    margin: 0;
+}
+
+.styled-div {
+    width: 300px;
+    height: 150px;
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    line-height: 150px;
+    font-size: 18px;
+    border-radius: 10px;
+}
