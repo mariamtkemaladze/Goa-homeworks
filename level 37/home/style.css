@@ -1,0 +1,35 @@
+.header{font-size: xxx-large;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: darkcyan;
+text-align:left;
+background-color: blanchedalmond;
+}
+
+.navbar{position: fixed;
+     left:35%;
+    color: black;
+    background-color: transparent;
+    text-align: center;
+    line-height:20% ;}
+  
+.h4{text-align: center;}
+
+.h42{text-align: center;}
+
+.sec1{position: static;
+   display: relative;
+margin-top:10%;
+font-size: larger;}
+
+.sec2{position: static;
+font-size: larger;}
+
+.cont{position: absolute;
+font-size: larger;}
+
+
+.footer{
+    display:block;
+    background-color: darkslategray;
+    padding: 10px;
+    margin: 5px;}
