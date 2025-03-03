@@ -1,0 +1,14 @@
+div{background-color: rgb(117, 195, 0);
+width:60px;
+height:35px;
+text-align: center;
+color: white;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+transition: 1s;
+border-radius: 15%;
+}
+
+div:hover{ 
+      transform: translateX(100%) rotate(360deg);
+
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projectt</title>
+    <style>
+        body {
+            background-color: #0d1a2d;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Outfit', sans-serif;
+        }
+        .card {
+            background-color: #15263f;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .card h2 {
+            color: white;
+            font-size: 18px;
+            margin-top: 15px;
+        }
+        .card p {
+            color: #8bacda;
+            font-size: 14px;
+        }
+        .details {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15px;
+        }
+        .price {
+            color: #00fff7;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+        }
+        .price::before {
+            content: '\1F48E';
+            margin-right: 5px;
+        }
+        .time-left {
+            color: #8bacda;
+            display: flex;
+            align-items: center;
+        }
+        .time-left::before {
+            content: '\1F553';
+            margin-right: 5px;
+        }
+        .creator {
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 10px;
+        }
+        .creator img {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .creator span {
+            color: white;
+        }
+        .creator a {
+            color: #00fff7;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="c:\Users\user\Desktop\image-equilibrium.jpg" alt="can't open Image">
+        <h2>Equilibrium #3429</h2>
+        <p>Our Equilibrium collection promotes balance and calm.</p>
+        <div class="details">
+            <span class="price">0.041 ETH</span>
+            <span class="time-left">3 days left</span>
+        </div>
+        <div class="creator">
+            <img src="c:\Users\user\Desktop\image-avatar.png" alt="Creator Image">
+            <span>Creation of <a href="#">Jules Wyvern</a></span>
+        </div>
+    </div>
+</body>
+</html>
