@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-image: url(https://files.oaiusercontent.com/file-8coYiMvPiuKj9227cHPAWP?se=2025-03-11T14%3A37%3A33Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Db0541be7-8869-438d-8c99-e798938af04a.webp&sig=sjl%2Ba2ALC34LsxNcI89Yp12AXRTxCDxxapKpmP1Tdo4%3D);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            background: white;
+            width: 300px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .card-header {
+            background: url(https://files.oaiusercontent.com/file-X24vwpbAp2UkoRAnwcvAYp?se=2025-03-11T14%3A42%3A04Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Df463ca96-8653-4bd2-88c0-6985a03d0374.webp&sig=yOyLHpLOkKWr79psX4slhNXnytQiGJsTNMjJ5EErQZc%3D);
+            height: 100px;
+            position: relative;
+        }
+
+        .profile-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 5px solid white;
+            position: absolute;
+            bottom: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .card-body {
+            padding: 50px 20px 20px;
+        }
+
+        .card-body h2 {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .card-body p {
+            font-size: 14px;
+            color: gray;
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: space-around;
+            padding: 15px;
+            border-top: 1px solid #ddd;
+        }
+
+        .card-footer div {
+            text-align: center;
+        }
+
+        .card-footer span {
+            font-weight: bold;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card-header">
+            <img src="blob:https://www.messenger.com/76fb1701-2a95-4d1c-94c3-5e311c2414e6" alt="Profile Picture" class="profile-img">
+        </div>
+        <div class="card-body">
+            <h2>Victor Crest <span style="color: gray; font-weight: normal;">26</span></h2>
+            <p>London</p>
+        </div>
+        <div class="card-footer">
+            <div>
+                <span>80K</span>
+                <small>Followers</small>
+            </div>
+            <div>
+                <span>803K</span>
+                <small>Likes</small>
+            </div>
+            <div>
+                <span>1.4K</span>
+                <small>Photos</small>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
