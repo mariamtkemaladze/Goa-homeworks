@@ -1,0 +1,222 @@
+body{background-color: rgb(237, 237, 237);}
+.cont1
+{background-color:hsl(33, 77%, 92%) ;
+width:200px;
+height: 350px;
+border-radius: 5%;
+display: grid;
+margin:10%;}
+
+.p1 {position: absolute;
+color: black;
+font-family:Arial, Helvetica, sans-serif;
+font-weight: 400;
+font-size: x-large;
+left:2%;
+top:5%;
+margin:10%;}
+
+
+.p2{position: absolute;
+color: hsl(256, 67%, 59%);
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 500;
+font-size: x-large;
+left:2%;
+top:16%;
+margin:10%;}
+
+.img1 {position: absolute;
+width:150px;
+top:25%;
+left:2%;
+margin:10%}
+
+.cont2 {background-color: hsl(256, 67%, 59%) ;
+border-radius: 3%;
+width:500px;
+height: 290px;
+position: absolute;
+left:27%;
+bottom:40%;}
+
+.p3 {color: white;
+font-family:Arial, Helvetica, sans-serif;
+font-size: xx-large;
+font-weight: 500;
+position: absolute;
+left:25%;
+top:10%}
+
+.p4 {color:hsl(39, 100%, 71%) ;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 500;
+font-size: xx-large;
+position: absolute;
+left:63%;
+top:10%}
+
+.p5 {color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    font-weight: 500;
+    position: absolute;
+    left:30%;
+    top:25%}
+
+.p6 {color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    font-weight: 500;
+    position: absolute;
+    left:52%;
+    top:25%}
+
+.img2{position: absolute;
+width: 150px;
+top:55%;
+left:36%;}
+
+.p7 {color:hsl(254, 88%, 90%);
+position: absolute;
+font-family: Arial, Helvetica, sans-serif;
+top:62%;
+left:33%}
+
+.cont3 { background-color:hsl(254, 88%, 90%) ;
+position: absolute;
+width: 200px;
+height: 500px;
+left:65%;
+bottom: 11%;
+border-radius: 3%;}
+
+.p8 { color: black;
+position: absolute;
+font-family: Arial, Helvetica, sans-serif;
+font-size: x-large;
+left:10%;
+}
+
+.img3{position: absolute;
+width: 180px;
+height:230px;
+top:22%;
+left:10%}
+
+.p9 {color: black;
+position: absolute;
+top:70%;
+left:15%;
+font-family: Arial, Helvetica, sans-serif;}
+
+.cont4 {background-color: hsl(39, 100%, 71%);
+position: absolute;
+border-radius: 3%;
+width:200px;
+height:350px;
+margin:10%;
+top:50%
+}
+
+.img4 {width: 160px;
+height:180px;
+position: absolute;
+top:43%;
+left:13%}
+
+.p17 {color: black;
+font-family: Arial, Helvetica, sans-serif;
+font-size: x-large;
+position: absolute;
+left:7%;
+top:-2%;
+font-weight: 500;
+
+}
+
+.img5{width: 245px;}
+
+.cont5 {background-color: white;
+width: 250px;
+height: 215px;
+position: absolute;
+border-radius: 3%;
+left:27%;
+bottom:7%}
+
+
+.p10 { color: black;
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    left:10%;
+    }
+
+.cont6{background-color:hsl(39, 100%, 71%);
+    width: 250px;
+    height: 215px;
+    position: absolute;
+    border-radius: 3%;
+    left:45%;
+    bottom:7%}
+
+.img6 {width:170px;
+height:100px ;
+position: absolute;
+left:15%;
+bottom:0.2%}
+
+.p11 { color: black;
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    left:15%;
+top:-8%}
+
+.cont7 {background-color:white;
+    width: 250px;
+    height: 215px;
+    position: absolute;
+    border-radius: 3%;
+    left:27%;
+    bottom:-25%}
+
+.img7{width:150px;
+position:absolute;
+top:60%;
+left:19%}
+
+.p12{color: black;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 300%;
+font-weight:bolder;
+position: absolute;
+left:10%;
+top:-15%}
+
+.p13{color: black;
+    position: absolute;
+    top:30%;
+    left:17%;
+    font-family: Arial, Helvetica, sans-serif;}
+
+.cont8{background-color:  hsl(256, 67%, 59%);
+position: absolute;
+width: 495px;
+height: 200px;
+border-radius: 3%;
+left:45%;
+top:97%}
+
+.img8{width: 180px;
+position: absolute;
+left:5%;
+top:10%}
+
+.p14{position: absolute;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 190%;
+    left:50%}
