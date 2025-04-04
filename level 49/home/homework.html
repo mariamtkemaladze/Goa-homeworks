@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+        body {
+            background-color: #121212;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .card {
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 300px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .profile-pic {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .name {
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .location {
+            color: #a1ff00;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .bio {
+            color: #b3b3b3;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .button {
+            display: block;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .button:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <img src="./social-links-profile-main/" alt="Profile Picture" class="profile-pic">
+        <div class="name">Jessica Randall</div>
+        <div class="location">London, United Kingdom</div>
+        <div class="bio">"Front-end developer and avid reader."</div>
+        <a href="#" class="button">GitHub</a>
+        <a href="#" class="button">Frontend Mentor</a>
+        <a href="#" class="button">LinkedIn</a>
+        <a href="#" class="button">Twitter</a>
+        <a href="#" class="button">Instagram</a>
+    </div>
+
+</body>
+</html>

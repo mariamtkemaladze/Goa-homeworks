@@ -1,0 +1,28 @@
+* { padding:0;
+margin:0;
+box-sizing: border-box;}
+
+body {height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: rgb(32, 200, 222) ;}
+
+main {display: flex;
+justify-content: center;
+align-items: center;
+background-color: white;
+width:500px;
+height: 350px;}
+
+p {color: rgb(32, 200, 222);}
+
+input[type="text"]
+{padding:8px;
+width:300px}
+
+input[type="button"] {padding:8px;
+background-color:  rgb(32, 200, 222);
+border-color:rgb(32, 200, 222);
+width:300px;
+color:white;}
