@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--სტუდენტისგან შემოტანეთ 3 სხვადასხვა საგნის ქულა, შემდეგ გამოითვალეთ საშუალო ქულა და საშუალო ქულის შესაფერისად გამოტანეთ შეფასება, თუ სტუდენტის ქულა მეტია 90 -  ზე და ნაკლებია 100 - ზე, მაშინ გამოიტანეთ 'A', სხვა შემთხვევაში თუ სტუდენტის ქულა მეტია 70 - ზე და ნაკლებია 80 - ზე, მაშინ გამოიტანეთ 'B', სხვა შემთხვევაში თუ სტუდენტის ქულა მეტია 50 - ზე და ნაკლებია 65 - ზე, მაშინ გამოიტანეთ 'C', სხვა შემთხვევაში თუ სტუდენტის ქულა მეტია 25 - ზე და ნაკლებია 50 - ზე, მაშინ გამოიტანეთ 'D', ხოლო თუ 25 -  ზე ნაკლებია, მაშინ გამოიტანეთ 'წადი ისწავლე და მერე მოდი'
+შემოიტანეთ ისეთი მნიშვნელობები, რომლებიც გამოიტანს ყველა შეფასებას (A,B,C,D, 'წადი ისწავლე და მერე მოდი')-->
+
+
+<script>
+let x = Number(prompt("enter first grade:"));
+let y = Number(prompt("enter second grade:"));
+let z = Number(prompt("enter third grade:"));
+
+let midgrade = console.log(x + y + z);
+let midgrade1 = console.log (midgrade / 3);
+
+if( 90 < midgrade <100) {
+    console.log("A");
+}
+else if(70 < midgrade <80) {
+    console.log("B");
+}
+else if(50 < midgrade1 < 65) {
+    console.log("C");
+}
+else if (25 < midgrade1 <50){
+    console.log("D");
+}
+else if(midgrade < 25); {
+    console.log("go, study and come back")
+}
+</script>
+</body>
+</html>

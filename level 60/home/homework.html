@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        //1
+        function getDayName(dayNumber) {
+  let dayName;
+
+  switch (dayNumber) {
+    case 1:
+      dayName = "ორშაბათი";
+      break;
+    case 2:
+      dayName = "სამშაბათი";
+      break;
+    case 3:
+      dayName = "ოთხშაბათი";
+      break;
+    case 4:
+      dayName = "ხუთშაბათი";
+      break;
+    case 5:
+      dayName = "პარასკევი";
+      break;
+    case 6:
+      dayName = "შაბათი";
+      break;
+    case 7:
+      dayName = "კვირა";
+      break;
+    default:
+      dayName = "არასწორი დღე";
+  }
+
+  console.log(dayName);
+}
+
+
+getDayName(1); 
+getDayName(5); 
+getDayName(8); 
+
+//2
+
+let number = parseInt(prompt("შეიყვანე რიცხვი:"));
+let result; 
+
+if (isNaN(number)) {
+  result = "არასწორი მონაცემია";
+} else if (number % 2 === 0) {
+  result = "ლუწი";
+} else {
+  result = "კენტი";
+}
+
+console.log("შენ მიერ შეყვანილი რიცხვი არის: " + result);
+
+//3
+
+let weatherCode = parseInt(prompt("შეიყვანე რიცხვი (1-4):"));
+let weatherType;
+
+switch (weatherCode) {
+  case 1:
+    weatherType = "მზიანი";
+    break;
+  case 2:
+    weatherType = "წვიმიანი";
+    break;
+  case 3:
+    weatherType = "მოღრუბლული";
+    break;
+  case 4:
+    weatherType = "ქარიანი";
+    break;
+  default:
+    weatherType = "არ არის დადგენილი";
+}
+
+console.log("ამინდი არის: " + weatherType);
+
+//4
+
+let monthNumber = parseInt(prompt("შეიყვანე რიცხვი (1-12):"));
+let monthName;
+let halfOfYear;
+
+
+switch (monthNumber) {
+  case 1:
+    monthName = "იანვარი";
+    break;
+  case 2:
+    monthName = "თებერვალი";
+    break;
+  case 3:
+    monthName = "მარტი";
+    break;
+  case 4:
+    monthName = "აპრილი";
+    break;
+  case 5:
+    monthName = "მაისი";
+    break;
+  case 6:
+    monthName = "ივნისი";
+    break;
+  case 7:
+    monthName = "ივლისი";
+    break;
+  case 8:
+    monthName = "აგვისტო";
+    break;
+  case 9:
+    monthName = "სექტემბერი";
+    break;
+  case 10:
+    monthName = "ოქტომბერი";
+    break;
+  case 11:
+    monthName = "ნოემბერი";
+    break;
+  case 12:
+    monthName = "დეკემბერი";
+    break;
+  default:
+    monthName = "არასწორი თვე";
+}
+
+
+halfOfYear = (monthNumber >= 1 && monthNumber <= 6) 
+  ? "პირველი ნახევარი" 
+  : (monthNumber >= 7 && monthNumber <= 12) 
+    ? "მეორე ნახევარი" 
+    : "შეყვანილია არასწორი თვე";
+
+console.log("თვეა: " + monthName);
+console.log("წლის ნაწილი: " + halfOfYear);
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1
+        function financialPlanning(age, gender, income) {
+  if (age >= 18) {
+    if (gender.toLowerCase() === "ქალი") {
+      if (income > 5000) {
+        console.log("თქვენი ფინანსური მგომარეობა უზრუნველყოფილია");
+      } else if (income > 3000) {
+        console.log("ფინანსური პოზიცია სტაბილურია. უკეთესი გეგმაა საჭირო.");
+      } else {
+        console.log("გჭირდებათ ფინანსური გეგმის გაუმჯობესება");
+      }
+    } else if (gender.toLowerCase() === "კაცი") {
+      if (income > 6000) {
+        console.log("თქვენ მზად ხართ ინვესტიციებისთვის!");
+      } else if (income > 4000) {
+        console.log("შემოსავალი სტაბილურია");
+      } else {
+        console.log("გჭირდებათ ფინანსური გეგმის გაუმჯობესება");
+      }
+    } else {
+      console.log("სქესი არასწორად არის შეყვანილი");
+    }
+  } else {
+    console.log("მიიღეთ განათლება და შემდეგ დაიწყეთ ინვესტიცია");
+  }
+}
+
+
+financialPlanning(25, "ქალი", 5200);
+financialPlanning(30, "კაცი", 4500); 
+financialPlanning(17, "ქალი", 1000); 
+
+
+
+//2
+
+let number = parseInt(prompt("შეიყვანე რიცხვი:"));
+
+if (isNaN(number)) {
+  console.log("გთხოვ შეიყვანე სწორი რიცხვი.");
+} else if (number % 2 === 0) {
+  console.log("ეს რიცხვი ლუწია");
+} else {
+  console.log("ეს რიცხვი კენტია");
+}
+
+//3
+
+let temp = parseFloat(prompt("შეიყვანე ტემპერატურა ცელსიუსში:"));
+
+if (isNaN(temp)) {
+  console.log("გთხოვ შეიყვანე სწორი ტემპერატურა.");
+} else if (temp < 10) {
+  console.log("ამინდი ცივია");
+} else if (temp <= 25) {
+  console.log("ამინდი ზომიერია");
+} else {
+  console.log("ამინდი ცხელიაა");
+}
+
+//4
+
+let score = parseInt(prompt("შეიყვანე შენი ქულა (0-100):"));
+
+if (isNaN(score) || score < 0 || score > 100) {
+  console.log("გთხოვ შეიყვანე ვალიდური ქულა 0-დან 100-მდე.");
+} else if (score >= 90) {
+  console.log("შენმა შეფასებამ მიიღო: A");
+} else if (score >= 80) {
+  console.log("შენმა შეფასებამ მიიღო: B");
+} else if (score >= 70) {
+  console.log("შენმა შეფასებამ მიიღო: C");
+} else if (score >= 60) {
+  console.log("შენმა შეფასებამ მიიღო: D");
+} else {
+  console.log("შენმა შეფასებამ მიიღო: F");
+}
+
+    </script>
+</body>
+</html>

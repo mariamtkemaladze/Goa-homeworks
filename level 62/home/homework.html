@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1
+
+        let password = "Group 41 is best"; 
+let attempts = 0;  
+
+
+function checkPassword() {
+  while (attempts < 3) {
+    let userInput = prompt("შეიყვანეთ პაროლი:");
+
+    if (userInput === password) {
+      alert("თქვენი შეყვანილი პაროლი სწორია");
+      return;  
+    } else {
+      attempts++;
+      if (attempts < 3) {
+        alert("არასწორი პაროლი. სცადეთ კიდევ.");
+      }
+    }
+  }
+
+  
+  alert("თქვენ ამოგეწურათ ცდების რაოდენობა");
+}
+
+
+checkPassword();
+
+
+//2
+
+let n = parseInt(prompt("შეიყვანეთ რიცხვი N:"));
+let factorial = 1;
+
+
+for (let i = 1; i <= n; i++) {
+  factorial *= i;
+}
+
+console.log("რიცხვის " + n + " ფაქტორიალი არის: " + factorial);
+
+
+
+//3
+
+function countdown() {
+  for (let i = 100; i >= 0; i--) {
+    console.log("დარჩენილია " + i + " წამი");
+  }
+}
+
+
+countdown();
+
+    </script>
+</body>
+</html>
