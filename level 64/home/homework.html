@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calculator(a, b, operator) {
+    switch (operator) {
+        case '+':
+            return a + b;
+        case '-':
+            return a - b;
+        case '*':
+            return a * b;
+        case '/':
+            return b !== 0 ? a / b : "შეუძლებელია გაყოფა ნულზე";
+        case '**':
+            return a ** b;
+        case '%':
+            return b !== 0 ? a % b : "შეუძლებელია ნაშთის გამოთვლა ნულით";
+        default:
+            return "უცნობი ოპერატორი";
+    }
+}
+
+
+function sumOfSquares(a, b) {
+    return a * a + b * b;
+}
+
+
+function isEven(n) {
+    return n % 2 === 0 ? "even" : "odd";
+}
+
+
+
+
+    </script>
+</body>
+</html>

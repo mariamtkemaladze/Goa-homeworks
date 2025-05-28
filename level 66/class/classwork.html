@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+function Flight(flightID, status) {
+    this.flightID = flightID;
+    this.status = status;
+    
+    this.getStatusMessage = function() {
+        return `Flight ${this.flightID} has ${this.status}`;
+    };
+}
+
+
+const inputFlightID = "NGT 929"; 
+const inputStatus = "landed";    
+
+
+const flight = new Flight(inputFlightID, inputStatus);
+
+
+console.log(flight.getStatusMessage());
+
+    </script>
+</body>
+</html>

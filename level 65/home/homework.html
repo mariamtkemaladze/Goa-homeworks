@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        const book = {
+    title: "მარტოობის ასი წელიწადი",
+    author: "გაბრიელ გარსია მარკესი",
+    year: 1967,
+    genre: "მაგიური რეალიზმი",
+    price: 29.99
+};
+
+console.log(book);
+
+
+console.log("Title:", book.title);
+console.log("Author:", book.author);
+console.log("Year:", book.year);
+console.log("Genre:", book.genre);
+console.log("Price:", book.price);
+
+
+console.log("Title:", book["title"]);
+console.log("Author:", book["author"]);
+console.log("Year:", book["year"]);
+console.log("Genre:", book["genre"]);
+console.log("Price:", book["price"]);
+
+const description = `წიგნი "${book.title}" დაწერა ${book.author}-მა, გამოქვეყნდა ${book.year} წელს. მისი ჟანრია ${book.genre}, და ღირს ${book.price} ლარი.`;
+
+console.log(description);
+
+    </script>
+</body>
+</html>
