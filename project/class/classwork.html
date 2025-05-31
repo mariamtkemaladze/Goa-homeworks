@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>5-Day Juicing Challenge</title>
+
+<style>    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: #fff;
+    color: #333;
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: clamp(1.5rem, 3vw, 1.8rem);
+    margin-bottom: 8px;
+}
+
+p.subtitle {
+    font-size: clamp(0.8rem, 2vw, 0.9rem);
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.video-wrapper {
+    position: relative;
+    max-width: 600px;
+    width: 90%;
+    margin: 0 auto 20px;
+}
+
+video {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.cta-button {
+    display: inline-block;
+    background: #f26322;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: clamp(0.8rem, 2vw, 0.9rem);
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #d9561f;
+}
+
+.overlay {
+    background-color: rgba(0,0,0,0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.logo {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: clamp(200px, 30vw, 400px);
+    z-index: 2;
+}
+
+nav {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: clamp(12px, 2vw, 14px);
+    color: white;
+    z-index: 2;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: none;
+    }
+}
+
+input[type=text], input[type=email] {
+    width: 90%;
+    max-width: 370px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    margin: 10px;
+}
+
+.btn1 {
+    width: clamp(200px, 80%, 270px);
+    height: 40px;
+    background-color: #FF5B00;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 15px;
+    margin: 20px;
+}
+
+.main-content {
+    padding-top: 40vh;
+    text-align: center;
+    color: white;
+    margin-bottom: 100px;
+}
+
+.main-content h1 {
+    font-size: clamp(24px, 5vw, 40px);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.main-content .btn {
+    background-color: #FF5B00;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: clamp(14px, 3vw, 16px);
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 20px auto;
+    display: block;
+}
+
+.footer {
+    background-color: #70276e;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.footer p {
+    font-size: clamp(16px, 3vw, 18px);
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+.dotted-line {
+    border-top: 2px dotted white;
+    width: 80%;
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+.program-title {
+    color: red;
+    font-size: clamp(24px, 4vw, 32px);
+    margin: 40px 0;
+    font-family: Quattrocento Sans;
+    text-align: center;
+}
+
+.learn-more-btn2, .learn-more-btn {
+    background-color: #FF5B00;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: clamp(14px, 3vw, 16px);
+    border-radius: 25px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+}
+
+.program-section {
+    background-color: white;
+    padding: 40px 20px;
+    margin-top: 40px;
+}
+
+.program-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.program-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.program-image, .program-image2 {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.program {
+    max-width: 570px;
+    width: 90%;
+    height: auto;
+    display: block;
+    margin: 40px auto;
+    position: static;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
+    background: linear-gradient(to right, #ffffff 50%, #f9f9f9 50%);
+}
+
+.text-section {
+    background-color: #e7005c;
+    color: white;
+    width: 100%;
+    max-width: 500px;
+    padding: 30px 20px;
+    border-radius: 0 0 50px 50px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    margin: 0 auto 30px;
+}
+
+.text-section h2 {
+    margin-top: 0;
+    font-size: clamp(20px, 4vw, 24px);
+}
+
+.text-section ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.text-section ul li {
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 30px;
+    font-size: clamp(14px, 3vw, 16px);
+}
+
+.text-section ul li::before {
+    content: "✔";
+    color: white;
+    position: absolute;
+    left: 0;
+}
+
+.image-section {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+}
+
+.image-section img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background: url('./bf0b044-012f-5541-235-6e3b5ce8b714_Untitled_design_-_2023-05-28T191349.280.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: 1;
+}
+
+.hero-header {
+    position: absolute;
+    top: 0; left: 0; width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    z-index: 2;
+    padding: 30px 20px 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+    margin-top: 120px;
+    padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        margin-top: 80px;
+    }
+    
+    .program-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .container {
+        flex-direction: column;
+    }
+    
+    .text-section, .image-section {
+        max-width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+  <div class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-header">
+      <img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/themes/450406/settings_images/9cGwDZRRi4lfOuGD2ogo_preview-full-FullyRaw-logo-with-emblishment.png" alt="FullyRaw Logo" class="logo">
+      <nav>
+        <span>START HERE</span>
+        <span>ABOUT KRISTINA</span>
+        <span>PROGRAMS</span>
+        <span>YOUTUBE</span>
+        <span>BOOK</span>
+        <span>SHOP</span>
+        <span>MY APP</span>
+        <span>RETREATS</span>
+        <span>INNER CIRCLE</span>
+        <span>BLOG</span>
+        <span>TESTIMONIALS</span>
+        <span>LOGIN</span>
+      </nav>
+    </div>
+    <div class="hero-content">
+      <h1 style="font-family: Quattrocento Sans;">5-Day Juicing Challenge</h1>
+      <button class="btn">JOIN HERE!</button>
+    </div>
+  </div>
+
+  <img src="17abc3-6bb5-565f-886-61d6d31a185a_YouTube-thumbnail-Juicing-Challegne-2023-1280x720_2_.webp" alt="" class="program">
+
+  <div class="footer">
+    <p style="font-family: Quattrocento Sans; font-size: 20px;">JOIN MY EMAIL LIST TO GET A FREE COPY OF MY E-BOOK:<br/>
+    "5 EASY WAYS TO GO FULLYRAW"<br/>
+    DOWNLOAD YOUR FREE E-BOOK TODAY HERE...</p>
+
+    <form>
+        <input type="text" placeholder="First Name">
+        <input type="email" placeholder="Email">
+        <button class="btn1">Submit</button>
+    </form>
+    <div class="dotted-line"></div>
+    <div class="program-section">
+        <h2 class="program-title">Buy program</h2>
+        <div class="program-container">
+            <div class="program-item">
+                <img src="Screenshot 2025-05-30 180009.png" alt="" class="program-image2">
+                <button class="learn-more-btn">Learn More</button>
+            </div>
+            <div class="program-item">
+                <img src="588578-7d28-481c-a1bd-2da04d1a85_FullyRaw_Bundle_2025.jpg" alt="" class="program-image">
+                <button class="learn-more-btn2">Learn More</button>
+            </div>
+            <div class="program-item">
+                <img src="zO81nxH4Q6KwY3Lq4XqS_file.jpg" alt="" class="program-image2">
+                <button class="learn-more-btn">Learn More</button>
+            </div>
+            <div class="program-item">
+                <img src="M50aMWQXiHrbrJyjxB7Q_YouTube-thumbnail-9-day-1280x720.webp" alt="" class="program-image2">
+                <button class="learn-more-btn2">Learn More</button>
+            </div>
+            <div class="program-item">
+                <img src="ryQPbRYQTSCryr69d6RZ_FullyRaw-Kristina-download-my-app-1280x720-8.webp" alt="" class="program-image2">
+                <button class="learn-more-btn">Learn More</button>
+            </div>
+            <div class="program-item">
+                <img src="3i0uZvK3TxmZpKgCV06a_8DSkHaHLSZ2ifxqVx6qg_vegan.webp" alt="" class="program-image2">
+                <button class="learn-more-btn2">Learn More</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="text-section">
+            <h2>Kristina Carrillo-Bucaram</h2>
+            <p>Kristina Carrillo-Bucaram, AKA "FullyRaw Kristina," is a writer, speaker and raw vegan activist who educates and guides people who are ready to take control of their health, and experience the compassionate lifestyle one can achieve by living FullyRaw. After switching to her raw vegan lifestyle and winning her battle over Type II Diabetes she is on a mission to share what she learned with others.</p>
+            <p>Kristina carries one of the largest social media platforms for vegans and health activists around the globe. FullyRaw by Kristina offers solutions for people in all walks of life and for all budgets:</p>
+            <ul>
+                <li>Free recipes & videos online</li>
+                <li>Subscriptions to a range of thoughtfully priced programs</li>
+                <li>Various challenges</li>
+                <li>FullyRaw Juices</li>
+                <li>Her best-selling book The FullyRaw Diet: 21 Days to Better Health</li>
+                <li>FullyRaw App</li>
+                <li>Luxurious & transformative FullyRaw Retreats</li>
+            </ul>
+        </div>
+        <div class="image-section">
+            <img src="Screenshot 2025-05-30 210231.png" alt="FullyRaw Kristina">
+        </div>
+    </div>
+
+    <div class="video-section">
+        <h1>Join My FullyRaw Inner Circle Coaching Program</h1>
+        <p class="subtitle">Click below to learn more & sign-up!</p>
+
+        <div class="video-wrapper">
