@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function modifyArray(arr) {
+  let combinedArray = arr.concat(arr);
+  combinedArray.copyWithin(4, 0, 3);
+  combinedArray.fill('filled', 2, 5);
+  combinedArray.pop();
+  combinedArray.shift();
+  combinedArray.unshift(100, 200);
+  return combinedArray;
+}
+
+
+let numsArray = [1, 2, 3, 4];
+let strArray = ['a', 'b', 'c', 'd'];
+let result = modifyArray(numsArray.concat(strArray));
+console.log(result); 
+
+    </script>
+</body>
+</html>

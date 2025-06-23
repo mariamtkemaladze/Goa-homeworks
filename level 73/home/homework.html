@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Date Functions</title>
+<style>
+  body { font-family: Arial, sans-serif; padding: 1rem; }
+  input, button { margin: 0.5rem 0; padding: 0.3rem; }
+</style>
+</head>
+<body>
+
+<h2>Current Date & Time:</h2>
+<p id="currentDateTime"></p>
+
+<h2>Calculate Age</h2>
+<label>Enter your birthdate: <input id="birthdate" type="date"></label>
+<button onclick="calculateAge()">Calculate Age</button>
+<p id="ageResult"></p>
+
+<h2>Find Day of the Week</h2>
+<label>Enter a date: <input id="dateInput" type="date"></label>
+<button onclick="showDayOfWeek()">Show Day</button>
+<p id="dayOfWeekResult"></p>
+
+<script>
+
+  function displayCurrentDateTime() {
+    const now = new Date();
+    const pad = num => String(num).padStart(2, '0');
+    const formatted = `${now.getFullYear()}-${pad(now.getMonth() + 1)}-${pad(now.getDate())} ` +
+                     `${pad(now.getHours())}:${pad(now.getMinutes())}:${pad(now.getSeconds())}`;
+    document.getElementById('currentDateTime').textContent = formatted;
+  }
+
+  setInterval(displayCurrentDateTime, 1000); 
+  displayCurrentDateTime();
+
+ 
+  function calculateAge() {
+    const birthdateInput = document.getElementById('birthdate').value;
+    if (!birthdateInput) return;
+    const birthdate = new Date(birthdateIn

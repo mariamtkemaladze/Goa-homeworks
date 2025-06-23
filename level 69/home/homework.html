@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//1
+
+        function getArrayLength(arr) {
+  return arr.length;
+}
+
+
+console.log(getArrayLength([1, 2, 3, 4])); 
+
+//2
+
+function concatenateArrays(arr1, arr2) {
+  return arr1.concat(arr2);
+}
+
+
+console.log(concatenateArrays([1, 2], [3, 4])); 
+
+
+//3
+
+function pushValue(arr, value) {
+  return arr.push(value); 
+}
+
+
+let numbers = [10, 20, 30];
+console.log(pushValue(numbers, 40)); 
+
+
+//4
+
+function popLastElement(arr) {
+  return arr.pop();
+}
+
+
+let fruits = ["apple", "banana", "kiwi"];
+console.log(popLastElement(fruits)); 
+
+//5
+
+function concatAndPush(arr1, arr2, newValue) {
+  let newArray = arr1.concat(arr2);
+  newArray.push(newValue);
+  return newArray;
+}
+
+
+console.log(concatAndPush([1, 2], [3, 4], 5)); 
+
+//6
+
+function sumArray(arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  return sum;
+}
+
+
+console.log(sumArray([5, 10, 15])); 
+
+
+
+    </script>
+</body>
+</html>

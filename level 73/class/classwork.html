@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Date Example</title>
+</head>
+<body>
+
+<h2>Current Date and Time:</h2>
+<p id="currentDate"></p>
+
+<h2>Modified Date and Time:</h2>
+<p id="modifiedDate"></p>
+
+<script>
+  
+  const currentDate = new Date();
+
+
+  document.getElementById('currentDate').textContent = currentDate.toString();
+
+
+  const modifiedDate = new Date(currentDate); 
+  modifiedDate.setFullYear(currentDate.getFullYear() + 1);
+  modifiedDate.setMonth(currentDate.getMonth() + 2);      
+  modifiedDate.setDate(currentDate.getDate() + 10);       
+
+  
+  document.getElementById('modifiedDate').textContent = modifiedDate.toString();
+</script>
+
+</body>
+</html>

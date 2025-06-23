@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+const allValue = [
+  25,                               
+  "გამარჯობა!",                   
+  3.14,                           
+  true,                             
+  {                                
+    სახელი: "ანა",
+    გვარი: "ბერიძე",
+    ასაკი: 22,
+    ქვეყანა: "საქართველო",
+    ქალაქი: "თბილისი"
+  }
+];
+
+
+const person = allValue[4];
+
+
+const sentence = `ჩემი სახელია ${person.სახელი}, ჩემი გვარია ${person.გვარი}, ვარ ${person.ასაკი} წლის, ვცხოვრობ ${person.ქვეყანა}-ში, ქალაქ ${person.ქალაქი}.`;
+
+console.log(sentence); 
+
+
+    </script>
+</body>
+</html>

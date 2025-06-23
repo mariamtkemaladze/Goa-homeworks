@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+const academy = {
+  name: "Tech Academy",
+  courses: ["Programming", "Design", "Marketing"],
+  socialLink: "https://facebook.com/TechAcademy",
+  reviews: {
+    review1: {
+      name: "Nino",
+      status: "parent",
+      review: "ძალიან კარგი აკადემიაა, რეკომენდაციას ვუწევ ყველას!"
+    },
+    review2: {
+      name: "Giorgi",
+      status: "child",
+      review: "ძალიან მომწონს გაკვეთილები!"
+    },
+    review3: {
+      name: "Lasha",
+      status: "parent",
+      review: "ჩემი შვილი ძალიან ბედნიერია აქ სწავლით."
+    }
+  }
+};
+
+
+console.log("ობიექტის თვისება-მნიშვნელობების სია:");
+for (let [key, value] of Object.entries(academy)) {
+  console.log(`${key}:`, value);
+}
+
+
+console.log("\nობიექტის თვისებების სია:");
+console.log(Object.keys(academy));
+
+
+console.log("\nობიექტის მნიშვნელობების სია:");
+console.log(Object.values(academy));
+
+
+const propertyToCheck = "socialLink";
+console.log(`\nაქვს თუ არა ობიექტს '${propertyToCheck}' თვისება?`, academy.hasOwnProperty(propertyToCheck));
+
+const newObj = { member: 120 };
+const merged = { ...academy, ...newObj };
+console.log("\nგაერთიანებული ობიექტი:");
+console.log(merged);
+
+
+Object.freeze(academy);
+
+
+console.log("\nგაყინულია თუ არა academy ობიექტი?", Object.isFrozen(academy));
+
+    </script>
+</body>
+</html>

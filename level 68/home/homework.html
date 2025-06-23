@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const university = {
+  name: "State University",
+  departments: 8,
+  website: "https://stateuniversity.edu",
+  ratings: {
+    student1: { name: "Anna", review: "Great experience!" },
+    student2: { name: "Luka", review: "Very good courses." },
+    student3: { name: "Mariam", review: "Friendly professors." }
+  }
+};
+
+for (let [key, value] of Object.entries(university)) {
+  console.log(key, value);
+}
+
+console.log(university.hasOwnProperty("scholarship"));
+
+const merged = { ...university, studentsCount: 2000 };
+console.log(merged);
+
+Object.freeze(university);
+university.name = "New University";
+console.log(university.name);
+
+console.log(Object.isFrozen(university));
+
+    </script>
+</body>
+</html>
